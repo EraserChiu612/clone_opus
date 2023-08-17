@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;  /* 區塊產生間隔 */
+    align-items: center;
+    padding: 1rem;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+}
+.header_menu {
+    /* margin-left: 16px;
+    margin-right: 16px; */
+    margin: 0 16px ;
+}
+.youtube_logo {
+    margin-left: 16px;
+}
+.menu_icon {
+    display: grid ;
+    grid-template-columns: repeat(4,auto);
+    align-items: center ;
+    grid-gap:1.5rem ;
+}
+.menu-chanel-icon {
+    width: 36px ;
+    height: 36px;
+    border-radius: 50%;
+}
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 4rem;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6em;
+    border: 1px solid #c6c6c6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 25px;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #c6c6c6;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+.search-bar a {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.mainbody {
+    display: flex;
+    height: calc(100% - 72px);
+}
+.sidebar {
+    background-color: white;
+    width: 230px;
+}
+.sidebar_category {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+.sidebar-font {
+    font-size: 0.9rem;
+    margin-left: 24px;
+}
+.sidebar_category.active {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+.sidebar_category:hover {
+    background-color: #f9f9f9;
+}
+.sidebar_category.active:hover {
+    background-color: #ddd;
+} 
+.video-container {
+    display:flex ;
+    flex-direction: column;
+
+}
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.video-description {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+.channel-icon {
+    border-radius: 50%;
+    border: 1px solid #c6c6c6;
+    width: 36px;
+    height: 36px;
+    margin-right: 0.75rem;
+}
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+.video-title {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.video-channel-name {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    text-decoration: none;
+    transition: color 500ms;
+}
+.video-channel-name:hover {
+    color: #111 ;
+}
+.video-channel-name, .video-details {
+    color: #555;
+}
+.thumbnail {
+    position: relative;  /* 相對於此位置 */
+    display: flex;
+
+}
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;    /* 絕對位置 */
+    right: 5px;
+    bottom: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
+
+}
+.video {
+    width: 100%;
+    
+}
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
+    gap: 3rem 1rem;  /* grid間距 row,colum */
+    padding: 3rem 0;
+    margin: 0 1.5rem;
+    border-top: 1px solid #ddd;
+}
+.video-section:first-child {
+    border-top: none;
+
+}
+.video-section-title {
+    display: flex;
+    grid-column: 1 / -1; /*  佔據整個row */
+    justify-content: space-between;
+    align-items: center;
+    margin: -1rem 0;
+}
+.video-section-title-close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
