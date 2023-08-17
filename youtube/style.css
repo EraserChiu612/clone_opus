@@ -37,11 +37,11 @@ body {
 .menu-chanel-icon {
     width: 36px ;
     height: 36px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .search-bar {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 1; 
     margin: 0 4rem;
 }
 .search-input {
