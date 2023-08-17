@@ -1,0 +1,99 @@
+*,*::after,**::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}   
+a {
+    text-decoration: none;
+}
+header div {
+    font-size: 0.75rem;
+}
+header .header-container {
+    display: flex;
+    max-width:1312px;
+    height: 28px;
+    justify-content: space-between;
+    align-items: center;
+    margin: -7px auto;
+    padding: 0 32px;
+    column-gap:200px;   /*midden space*/
+}
+header .l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width :300px;
+}
+header .r-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:370px;
+}
+header .l-header>a, header .r-header>a, .drop-down-menu {
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+header .sign_or_reg {
+    color: #0654BA;
+}
+header .bell,header .cart {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1023px) {
+ .r-header a:first-child { /*ship to cancel*/
+    display: none;
+ }
+ header .r-header {
+    width: 300px;
+    flex-shrink: 0;   /*0 is space no change*/
+ }
+}
+@media screen and (max-width: 999px) {
+    .r-header div:first-of-type {   /*Watchlist cancel*/
+       display: none;
+    }
+    header .r-header {
+       width: 220px;
+       flex-shrink: 0;   
+    }
+   }
+@media screen and (max-width: 763px) {
+    .l-header>div>span:nth-last-of-type(1) {  
+       display: none;
+    }
+    .l-header>div>a:nth-last-of-type(1){ /*or,register cancel*/
+        display: none;
+     }
+    header .l-header {
+       width: 250px;
+       flex-shrink: 0;   
+    }
+   }
+@media screen and (max-width: 678px) {
+    /*Daily Deals,Help&Contact cancel*/
+    header .l-header>a {
+       display: none;
+    }
+   
+    header .l-header {
+       width: 110px;
+       flex-shrink: 0;   
+    }
+   }
+
+
+
+
+
+
+
+
+

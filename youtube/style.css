@@ -41,7 +41,7 @@ body {
 }
 .search-bar {
     display: flex;
-    flex-grow: 1; 
+    flex-grow: 0.8; 
     margin: 0 4rem;
 }
 .search-input {
