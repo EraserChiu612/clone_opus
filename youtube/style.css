@@ -168,7 +168,7 @@ body {
 }
 .video-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr)); /* auto-fill 產生RWD  */
     gap: 3rem 1rem;  /* grid間距 row,colum */
     padding: 3rem 0;
     margin: 0 1.5rem;
