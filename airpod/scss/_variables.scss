@@ -1,0 +1,46 @@
+$header-height: 3rem;
+
+//color
+$first-color: #1d1d1f;
+$second-color: #0071e3;
+$black-color: #111;
+$white-color: #fff;
+$bg_color: #fafafa;
+
+//Font
+$body-font: "Roboto", sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+//Font-size
+$biggest-font-size: 2.5rem;
+$big-font-size: 1.5rem;
+$normal-font-size: 1.25rem;
+$smaller-font-size: .75rem;
+
+@media screen and (min-width: 768px) {
+    $biggest-font-size: 3.5rem;
+    $bigger-font-size: 3rem;
+    $big-font-size: 1.5rem;
+    $normal-font-size: 1rem;
+    $smaller-font-size: .9rem;
+}
+//維持原css的變數設定方式,才能讓字體變化生效
+:root {
+    --bigger-font-size: 2.25rem;
+    @media screen and (min-width: 768px){
+    --bigger-font-size: 3rem;}
+}
+
+//Line height
+$line-height-medium: 2rem;
+$line-height-smaller: 1.3rem;
+$line-height-smallest: 1rem;
+
+//Z-index
+$z-back: -10;
+$z-normal: 1;
+$z-fixed: 100;
